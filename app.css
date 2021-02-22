@@ -1,6 +1,7 @@
 svg {
   background-color: #fff;
   cursor: default;
+  display: block;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

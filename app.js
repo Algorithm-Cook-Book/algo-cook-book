@@ -4,8 +4,8 @@ const width = 960;
 const height = 500;
 const colors = d3.scaleOrdinal(d3.schemeCategory10);
 
-const svg = d3.select('body')
-  .append('svg')
+const svg = d3.select("#content")
+  .append("svg")
   .on('contextmenu', () => { d3.event.preventDefault(); })
   .attr('width', width)
   .attr('height', height);
@@ -16,7 +16,7 @@ const svg = d3.select('body')
 //  - links are always source < target; edge directions are set by 'left' and 'right'.
 const nodes = [
   { id: 0, reflexive: false },
-  { id: 1, reflexive: true },
+  { id: 1, reflexive: false },
   { id: 2, reflexive: false }
 ];
 let lastNodeId = 2;
