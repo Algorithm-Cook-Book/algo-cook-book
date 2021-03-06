@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta charset="utf-8"/>
     <title>topic</title>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="css/app.css">
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="apple-touch-icon-precomposed" href="img/favicon-152.png"/>
 
@@ -46,7 +46,9 @@
   <body>
       <div class="container">
       <header>
+        <a id="top">
         <h1> topic </h1>
+        </a>
       </header>
 
       <hr>
@@ -72,9 +74,9 @@
           When a vertex is selected: Press 'R' to toggles reflexivity, Delete removes the node.
           When an edge is selected: L(eft), R(ight), B(oth) change direction, Delete removes the edge.
         </p>
-        <div id= "content" > </div>
-        <script src="d3.v5.min.js"></script>
-        <script src="app.js"></script>
+        <div id= "content"> </div>
+        <script src="js/d3.v5.min.js"></script>
+        <script src="js/app.js"></script>
         
           <script>
             (
@@ -94,8 +96,18 @@
           </script>
         <div class="controls">
           <button type="button" class="btn btn-danger btn-block">
-            Reset
+            Play
           </button>
+          <br>
+          <button type="button" class="btn btn-danger btn-block">
+            Pause
+          </button>
+          <br>
+          <a href="">
+            <button type="button" class="btn btn-danger btn-block">
+            Reset
+            </button>
+          </a>
           <br>
           <button type="button" class="btn btn-danger btn-block">
             Input an Adjacency matrix
@@ -113,7 +125,7 @@
       <hr>
       <footer>
         <p class="signature">
-          <a href="">Go to Top</a>
+          <a href="#top">Go to Top</a>
         </p>
       </footer>
       
