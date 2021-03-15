@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta charset="utf-8"/>
-    <title>Algorithm Cook Book</title>
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="shortcut icon" href="css/favicon.ico"/>
+    <title>topic</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="apple-touch-icon-precomposed" href="img/favicon-152.png"/>
   </head>
 
@@ -13,36 +13,36 @@
       <div class="container">
       <header>
         <a id="top">
-        <h1> Algorithm Cook Book </h1>
+        <h1> topic </h1>
         </a>
       </header>
 
       <hr>
       
       <div class="main">
+        <ol class="breadcrumb">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./">Sub-directory</a> </li>
+          <li class="active">topic</li>
+        </ol>
+        
         <p>
-        This piece of web is devoted to algorithm-lovers 
+        Some Text about the topic
         </p>
         <p>
-          Topics covered:<br>
-          <!---list of topics covered-->
-        <a href="bfs/bfs.html">Breadth-First Search</a><br>
-        <a href="dfs/dfs.html">Depth-First Search</a> <br>
-        <a href="topsort/topsort.html">Topological Sort</a><br>
-        <a href="analysis/analysis.html">Analysis of Algorithms</a>
+        Some More Text about the topic
         </p>
-        <!---instructions to use the graph visualiser-->
         <p>
-          How to use this graph visualiser?<br>
-          Click in the open space to add a node, drag your cursor from one node to another to add an edge between them.<br>
-          Move a node without affecting the graph : Press 'Ctrl' and Drag it <br>
-          Select a node or an edge : Click on the node or the edge <br>
-          Remove a node or an edge : Select the node or the edge + Press 'Delete'.<br>
-          Change the direction of an edge : Select an edge + Press 'L'(eft), 'R'(ight), 'B'(oth) <br> 
-          Select a node + Press 'R' to toggle reflexivity<br>
+          Instructions:<br>
+          Click in the open space to add a node, drag from one node to another to add an edge.
+          Ctrl-drag a node to move the graph layout.  
+          Click a node or an edge to select it.
+          When a vertex is selected: Press 'R' to toggles reflexivity, Delete removes the node.
+          When an edge is selected: L(eft), R(ight), B(oth) change direction, Delete removes the edge.
         </p>
         <div id= "content"> </div>
         <script src="js/d3.v5.min.js"></script>
+        <script src="js/graph.js"></script>
         <script src="js/app.js"></script>
         
           <script>
@@ -62,6 +62,14 @@
           ga('send', 'pageview');
           </script>
         <div class="controls">
+          <button type="button" class="btn btn-danger btn-block">
+            Play
+          </button>
+          <br>
+          <button type="button" class="btn btn-danger btn-block">
+            Pause
+          </button>
+          <br>
           <a href="">
             <button type="button" class="btn btn-danger btn-block">
             Reset

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8"/>
+    <title>Analysis of Algorithms</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="shortcut icon" href="../css/favicon.ico"/>
+    <link rel="apple-touch-icon-precomposed" href="img/favicon-152.png"/>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+
+  <body>
+      <div class="container">
+      <header>
+        <a id="top">
+        <h1>Analysis of Algorithms</h1>
+        </a>
+      </header>
+      <hr>
+      <div class="main">
+
+        <ol class="breadcrumb"><li><a href="../index.html">Home</a></li>
+        <li class="active">Analysis of Algorithms</li></ol>
+        
+        <!-----------------------------main content begins--------------------------------------->
+        <p>
+        Algorithms are fundamental to any modern technology. Often one needs to choose one out of many available correct algorithms.
+        The choice usually depends on the amount of resources used by an algorithm. So there arises a need of mathematically quantifying the amount 
+        of resources required by an algorithm as a function of the size (or occasionally the value) of the input. Since there does not exists
+        an entity similar to a standard computer to which all measurements of computing time may refer to. So we content ourselves by expressing 
+        the time taken (one of the above mentioned 'resources') to within a mutliplicative constant.</p>
+        <p> 
+        Under the <a href="https://en.wikipedia.org/wiki/Random-access_machine#:~:text=A%20random%2Daccess%20machine%20(RAM)%20is%20an%20abstract%20computational,the%20addition%20of%20indirect%20addressing.&text=%5Br%5D%20means%20%22the%20contents,of%20register%20with%20address%20r%22.">
+        RAM Model of Computation </a> we assume some basic operations like addition, subtraction, multiplication, division, reading and
+        writing a certain location in memory requires a unit amount of time of computation. And then we study asymptotically the number of such operations required 
+        by an algorithm depeding on the input size. As number of such operations is always non-negative (\(\geq 0\)), we restrict our study only to non-negative numbers.
+        </p>
+        <p>
+        Some Definitions:
+          <ul>
+            <li> The asymptotic upper bound - \(\mathcal{O}\)-notation<br> 
+              For a given function \(g(n)\), we denote by \(\mathcal{O}(g(n))\) (pronounced as  "big-oh of \(g\) of \(n\)") as a set of all those 
+              functions that are <em>asymptotically less than or equal</em> to \(g(n)\). 
+              $$ \mathcal{O}(g(n))=\{f(n):\textit{there exist positive constants, } c \textit{ and } n_{0} \textit{ such that } 0\leq f(n) \leq cg(n) \textit{ for all } n \geq n_{0}\}.$$
+             
+             <li> The asymptotic lower bound - \(\Omega\)-notation<br>
+              For a given function \(g(n)\), we denote by \(\Omega(g(n))\) (pronounced as  "big-omega of \(g\) of \(n\)") as a set of all those 
+              functions that are <em> asymptotically greater than or equal</em> to \(g(n)\). 
+              $$ \Omega(g(n))=\{f(n):\textit{there exist positive constants, } c \textit{ and } n_{0} \textit{ such that } 0\leq cg(n) \leq f(n)  \textit{ for all } n \geq n_{0}\}.$$
+            
+            <li> The asymptotic equivalence - \(\Theta\)-notation<br>
+              For a given function \(g(n)\), we denote by \(\Theta(n)\) (pronounced as "big-theta of \(g\) of \(n\)") as a set of all those 
+              functions that are <em>asymptotically equal</em> to \(g(n)\). 
+              $$ \Theta(g(n))=\{f(n):\textit{there exist positive constants, } c_1,c_2 \textit{ and } n_{0} \textit{ such that } 0\leq c_{1}g(n) \leq f(n) \leq c_{2}g(n) \textit{ for all } n \geq n_{0}\}.$$
+        </ul>
+          Observation: For a given function \(g(n)\), \(\Theta(g(n)) = \Omega(g(n)) \bigcap \mathcal{O}(g(n)).\)
+        </p>
+        <!-----------------------------main content ends--------------------------------------->
+        
+        <div class="controls">
+          <a href="https://github.com/Algorithm-Cook-Book/algo-cook-book/pulls"> 
+            <button type="button" class="btn btn-danger btn-block">
+            Discuss on GitHub
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <hr>
+      <footer>
+        <p class="signature">
+          <a href="#top">Go to Top</a>
+        </p>
+      </footer>
+      
+      </div>
+
+    </body>
+</html>
